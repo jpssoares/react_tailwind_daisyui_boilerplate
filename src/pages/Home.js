@@ -2,15 +2,15 @@ import React from 'react';
 import { CodeMockup, PhoneMockup } from 'react-daisyui'
 
 import Header from '../components/Header';
-import DaisyFooter from '../components/DaisyFooter';
-import DaisyHero from '../components/DaisyHero';
+import HeroComponent from "../components/HeroComponent.js";
+import FooterComponent from "../components/FooterComponent.js";
 
 const Home = () => {
 
   return (
     <div className='relative'>
         <Header />     
-        <DaisyHero />
+        <HeroComponent />
         
         <div className='flex flex-wrap justify-center'>
             <CodeMockup className='mx-10 my-4 max-w-md' >
@@ -22,7 +22,7 @@ const Home = () => {
         <div className='flex flex-wrap justify-center'>
             <PhoneMockup className='my-4'>Hi.</PhoneMockup>
         </div>
-        <DaisyFooter />
+        <FooterComponent />
     </div>
   );
 };
